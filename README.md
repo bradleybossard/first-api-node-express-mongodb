@@ -7,7 +7,12 @@ Step 1 : Start mongod
 ``mongod``
 Step 2 : Load data in mongo
 ``mongoimport --db simple --collection people --jsonArray data.json``
-
+Step 3 : Install dependencies
+``npm install``
+Step 4 : Run server (use nodemon to automatically pick up changes
+``nodemon server.js``
+Step 5 : Copy url and view in browser
+``http://localhost:9113/people``
 
 
 ## Mongo commands
