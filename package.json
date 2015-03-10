@@ -1,0 +1,25 @@
+{
+  "name": "first-api-node-express-mongodb",
+  "version": "1.0.0",
+  "description": "Just a test getting these 3 technologies working",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bradleybossard/first-api-node-express-mongodb.git"
+  },
+  "author": "bradleybossard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bradleybossard/first-api-node-express-mongodb/issues"
+  },
+  "homepage": "https://github.com/bradleybossard/first-api-node-express-mongodb",
+  "dependencies": {
+    "cors": "^2.5.3",
+    "express": "^4.12.2",
+    "mongoose": "^3.8.24"
+  }
+}
