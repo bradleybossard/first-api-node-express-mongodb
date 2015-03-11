@@ -16,8 +16,11 @@ Step 3 : Install dependencies
 ``npm install``
 
 Step 4 : Run server (use nodemon to automatically pick up changes
+
 ``nodemon server.js``
+
 Step 5 : Copy url and view in browser
+
 ``http://localhost:9113/people``
 
 
@@ -31,9 +34,14 @@ get one user
 ``db.people.findOne()``
 
 remove people collection
+ 
 ``db.people.remove()``
+
 drop database
-db.dropDatabase()
+
+``db.dropDatabase()``
+
 show current databases
+
 ``show dbs``
 
