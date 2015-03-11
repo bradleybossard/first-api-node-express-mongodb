@@ -15,8 +15,16 @@ var Person = mongoose.model('Person', personSchema, 'people')
 var app = express();
 app.use(cors());
 
+// Get list of all people
 app.get('/people', function(req, res) {
-  Person.find(function(err, doc) {
+  Person.find().select("firstName").exec(function(err, doc) {
+    res.send(doc);
+  });
+});
+
+// Get details for individual
+app.get('/people/:id', function(req, res) {
+  Person.findById(req.params.id, function(err, doc) {
     res.send(doc);
   });
 });
